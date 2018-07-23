@@ -1,0 +1,23 @@
+﻿<Application
+    x:Class="WinUiPoc.Main.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:Microsoft.UI.Xaml.Controls"
+    xmlns:local="using:WinUiPoc.Main"
+    xmlns:contract5Present="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract,5)">
+    
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls"/>
+                
+                <ResourceDictionary>
+                    <contract5Present:AcrylicBrush x:Key="NavigationViewDefaultPaneBackground" BackgroundSource="Backdrop" TintColor="Yellow" TintOpacity=".6"/>
+                    <contract5Present:AcrylicBrush x:Key="NavigationViewTopPaneBackground" BackgroundSource="Backdrop" TintColor="Yellow" TintOpacity=".6"/>
+                    <contract5Present:AcrylicBrush x:Key="NavigationViewExpandedPaneBackground" BackgroundSource="HostBackdrop" TintColor="Orange" TintOpacity=".8"/>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>
